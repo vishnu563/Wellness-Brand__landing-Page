@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellness Brand - Body & Mind Care</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <h1 class="logo">Wellness Bliss</h1>
+                <div>
+                    <h1 class="logo"><a href="#hero">Wellness Bliss</a></h1>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#products">Products</a></li>
@@ -33,59 +38,69 @@
     </section>
 
     <section id="about" class="section">
-        <h2>About Us</h2>
-        <div class="abt">
-            <div class="img">
-    
-            </div>
-            <div class="text-container">
-                <p>We recognize that genuine wellbeing is a delicate balance of mind, body, and soul that encompasses more than just physical health. Our goal is to offer goods and services that promote this equilibrium so you can establish a deeper connection with yourself.</p>
-                <p>In both how we create our solutions and how they affect your life, we firmly believe in the transformative power of love and care. Pure, natural components and a profound regard for your individual wellness path are used in the creation of each product. We are here to provide you with kind and honest guidance, whether your goal is to nourish your soul, revitalize your body, or regain inner peace.</p>
-                <p>We want to provide a loving, safe environment where you can explore holistic wellness and self-care without fear of rejection. With a touch of purity and a dedication to your wellbeing, every product we sell makes sure you always feel uplifted, empowered, and supported.</p>
+        <div class="top-class">
+            <h2>About Us</h2>
+            <div class="abt">
+                <div class="img">
+                    <img src="abt-img.jpg" alt="peaceful landscape">
+                </div>
+                <div class="text-container">
+                    <p>We understand that true wellbeing is about more than just physical health—it's a delicate balance of mind, body, and soul. Our mission is to provide products and services that foster this balance, allowing you to reconnect with yourself on a deeper level.</p>
+                    <p>We believe in the power of love and care, both in how we design our offerings and in how they impact your life. Each product is crafted with pure, natural ingredients and a deep respect for your personal wellness journey. Whether you're seeking to restore your inner peace, rejuvenate your body, or nourish your soul, we are here to guide you with compassion and integrity.</p>
+                    <p>Our goal is to create a safe, nurturing space where you can explore holistic wellness and self-care, free from judgment and full of love. Every product we offer carries a touch of purity and a commitment to your well-being, ensuring you always feel supported, empowered, and revitalized.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="products" class="section">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/oil.jpg" alt="Essential Oil">
-                <h3>Essential Oils</h3>
-                <p>Purify and rejuvenate your senses with our handcrafted essential oils.</p>
-            </div>
-            <div class="product">
-                <img src="images/tea.jpg" alt="Herbal Tea">
-                <h3>Herbal Teas</h3>
-                <p>Calm your mind with a cup of our organic, healing teas.</p>
-            </div>
-            <div class="product">
-                <img src="images/candle.jpg" alt="Scented Candle">
-                <h3>Scented Candles</h3>
-                <p>Bring peace and tranquility to your space with our all-natural candles.</p>
+        <div class="top-class">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="oil.jpg" alt="Essential Oil">
+                    <h3>Essential Oils</h3>
+                    <p>Purify and rejuvenate your senses with our handcrafted essential oils.</p>
+                </div>
+                <div class="product">
+                    <img src="tea.jpg" alt="Herbal Tea">
+                    <h3>Herbal Teas</h3>
+                    <p>Calm your mind with a cup of our organic, healing teas.</p>
+                </div>
+                <div class="product">
+                    <img src="candles.jpg" alt="Scented Candle">
+                    <h3>Scented Candles</h3>
+                    <p>Bring peace and tranquility to your space with our all-natural candles.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="services" class="section">
+        <div class="top-class">
         <h2>Our Services</h2>
         <div class="service-grid">
             <div class="service">
+                <img src="meditation.jpg" alt="Meditation">
                 <h3>Mindfulness Coaching</h3>
                 <p>Learn to center your mind and find inner peace with our experienced coaches.</p>
             </div>
             <div class="service">
+                <img src="massage.jpg" alt="Massage">
                 <h3>Massage Therapy</h3>
                 <p>Experience the healing touch through our therapeutic massage services.</p>
             </div>
             <div class="service">
+                <img src="yoga.jpg" alt="Yoga">
                 <h3>Wellness Workshops</h3>
                 <p>Join our workshops to explore holistic approaches to physical and mental wellness.</p>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="contact" class="section">
+        <div class="top-class">
         <h2>Contact Us</h2>
         <p>Reach out to us for personalized care, consultations, and inquiries about our wellness products and services.</p>
         <form action="submit" method="post">
@@ -94,12 +109,12 @@
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+    </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Wellness Bliss. All rights reserved.</p>
+        <p>&copy; <span id="currentYear"></span> Wellness Bliss. All rights reserved.</p>
     </footer>
-
-    <script src="index.js"></script>
+     <script src="index.js"></script>
 </body>
 </html>
